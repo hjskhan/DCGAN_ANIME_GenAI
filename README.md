@@ -263,7 +263,7 @@ $$n_{\text{out}} = \frac{64 + 2\times1 - 4}{2} + 1 = 32$$
 $$
 \text{Leaky ReLU}(x) = \begin{cases}
 x & \text{if } x > 0 \\
-\text{negative\_slope} \times x & \text{otherwise}
+\text{negative slope} \times x & \text{otherwise}
 \end{cases}
 $$
 - ReLU is recommended for the generator, but not for the discriminator model. Instead, a variation of ReLU that allows values less than zero, called Leaky ReLU, is preferred in the discriminator.
