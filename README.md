@@ -3,6 +3,23 @@
 ![Image GIF](output_images/dcgan.gif)
 ![Real_fake](output_images/Real_Fake_50_Epoch.png)
 
+# Summary
+- In this project we have used DCGAN architecture to generate images.
+- We have used the Anime dataset from Kaggle. We have used Pytorch and Pytorch Ignite to train the model.
+- We have trained the model on Kaggle's Tesla T4x2 GPU.
+- We have used 5, 25, 50 epochs to train the model. (Finalized 50 Epoch based metrics)
+- We have used 64 as the Size of feature maps in generator and the Size of feature maps in discriminator.
+- We have used 100 as the latent space dimension of input vectors for the generator.
+- The Generator has an input of a 1x1x100 vector, and the wanted output is a 3x64x64.
+- The Discriminator has an input of a 3x64x64 image, the output size is a binary 1x1 scalar.
+- We have used 0.0002 as the learning rate for optimizers.
+- We have used 0.5 as the Beta1 hyperparam for Adam optimizers.
+- We have used 128 as the batch size.
+- We have used 1 as the number of GPUs available.
+- We have used 3 as the number of channels in the training images. For color images this is 3.
+- We have used Frechet Inception Distance (FID) and Inception Score (IS) to evaluate the model.
+- We have used FastAPI to deploy the model on Azure. We have used Docker and GitHub Actions for CICD deployment.
+
 # Table of Contents
 
 1. [Introduction](#introduction)
