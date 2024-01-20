@@ -261,7 +261,7 @@ $$n_{\text{out}} = \frac{64 + 2\times1 - 4}{2} + 1 = 32$$
 - Leaky ReLU (Rectified Linear Unit) is a type of activation function that allows a small, non-zero gradient when the input is negative. It is defined as:
 
 $$
-\text{Leaky ReLU}(x) = \begin{cases} 
+\text{Leaky ReLU}(x) = \begin{cases}
 x & \text{if } x > 0 \\
 \text{negative\_slope} \times x & \text{otherwise}
 \end{cases}
