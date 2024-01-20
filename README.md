@@ -145,41 +145,31 @@ Seed values are set to ensure reproducibility of the code. The torch manual seed
 channels to 512 channels to take in account for the computational costs.
 
 #### 5(b). Explainantion for the Generator network:
-
 ----------------------------------------------------------------
         Layer (type)               Output Shape         Param #
 ----------------------------------------------------------------
-   ConvTranspose2d-1            [-1, 512, 4, 4]         819,200
-   ConvTranspose2d-2            [-1, 512, 4, 4]         819,200
-       BatchNorm2d-3            [-1, 512, 4, 4]           1,024
-       BatchNorm2d-4            [-1, 512, 4, 4]           1,024
-              ReLU-5            [-1, 512, 4, 4]               0
-   ConvTranspose2d-6            [-1, 256, 8, 8]       2,097,152
-       BatchNorm2d-7            [-1, 256, 8, 8]             512
-              ReLU-8            [-1, 256, 8, 8]               0
-   ConvTranspose2d-9          [-1, 128, 16, 16]         524,288
-      BatchNorm2d-10          [-1, 128, 16, 16]             256
-             ReLU-11          [-1, 128, 16, 16]               0
-  ConvTranspose2d-12           [-1, 64, 32, 32]         131,072
-      BatchNorm2d-13           [-1, 64, 32, 32]             128
-             ReLU-14           [-1, 64, 32, 32]               0
-  ConvTranspose2d-15            [-1, 3, 64, 64]           3,072
-             ReLU-16            [-1, 512, 4, 4]               0
-  ConvTranspose2d-17            [-1, 256, 8, 8]       2,097,152
-      BatchNorm2d-18            [-1, 256, 8, 8]             512
-             ReLU-19            [-1, 256, 8, 8]               0
-  ConvTranspose2d-20          [-1, 128, 16, 16]         524,288
-      BatchNorm2d-21          [-1, 128, 16, 16]             256
-             ReLU-22          [-1, 128, 16, 16]               0
-  ConvTranspose2d-23           [-1, 64, 32, 32]         131,072
-      BatchNorm2d-24           [-1, 64, 32, 32]             128
-             ReLU-25           [-1, 64, 32, 32]               0
-  ConvTranspose2d-26            [-1, 3, 64, 64]           3,072
-             Tanh-27            [-1, 3, 64, 64]               0
-        Generator-28            [-1, 3, 64, 64]               0
-             Tanh-29            [-1, 3, 64, 64]               0
-        Generator-30            [-1, 3, 64, 64]               0
-        
+    ConvTranspose2d-1            [-1, 512, 4, 4]         819,200
+    ConvTranspose2d-2            [-1, 512, 4, 4]         819,200
+        BatchNorm2d-3            [-1, 512, 4, 4]           1,024
+        BatchNorm2d-4            [-1, 512, 4, 4]           1,024
+               ReLU-5            [-1, 512, 4, 4]               0
+    ConvTranspose2d-6            [-1, 256, 8, 8]       2,097,152
+        BatchNorm2d-7            [-1, 256, 8, 8]             512
+               ReLU-8            [-1, 256, 8, 8]               0
+    ConvTranspose2d-9          [-1, 128, 16, 16]         524,288
+       BatchNorm2d-10          [-1, 128, 16, 16]             256
+              ReLU-11          [-1, 128, 16, 16]               0
+    ConvTranspose2d-12           [-1, 64, 32, 32]         131,072
+        BatchNorm2d-13           [-1, 64, 32, 32]             128
+               ReLU-14           [-1, 64, 32, 32]               0
+    ConvTranspose2d-15            [-1, 3, 64, 64]           3,072
+               ReLU-16            [-1, 512, 4, 4]               0
+    ConvTranspose2d-17            [-1, 256, 8, 8]       2,097,152
+        BatchNorm2d-18            [-1, 256, 8, 8]             512
+               ReLU-19            [-1, 256, 8, 8]               0
+    ConvTranspose2d-20          [-1, 128, 16, 16]         524,288
+        BatchNorm2d-21          [-1, 128, 16, 16]             256
+               ReLU-22          [-1, 128, 16, 16]               0
 ----------------------------------------------------------------
 
 - We use TransposeConv2d for upsampling the input.
