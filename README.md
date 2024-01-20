@@ -1,8 +1,27 @@
 # Anime DCGAN - Image Generation
 
-
 ![Image GIF](output_images/dcgan.gif)
-![Real_fake](output_images/Real_Fake_50.png)
+![Real_fake](output_images/Real_Fake_50_Epoch.png)
+
+# Table of Contents
+
+1. [Introduction](#introduction)
+2. [Steps to Run the Project](#steps-to-run-the-project)
+   - [Dataset](#1-dataset)
+   - [Installing and Loading Necessary Libraries](#2a-installing-and-loading-necessary-libraries)
+   - [Setting up Seed for Code Regeneration](#2b-setting-up-seed-for-code-regeneration)
+   - [Preprocessing Data](#3-preprocessing-data)
+   - [Setting up Variables](#4-setting-up-variables)
+   - [Model Design](#5-model-design)
+      - [Generator Architecture](#5a-creating-a-generator-architecture)
+      - [Discriminator Architecture](#6-discriminator-architecture)
+   - [Loss functions and Optimizers](#7-loss-functions-and-optimizers)
+   - [Model Training](#8-model-training)
+   - [Model Evaluation Metrics](#9-model-evaluation-metrics)
+   - [Model Comparison](#10-model-comparision)
+   - [Images Generated](#10c-images-generated)
+   - [Deployment](#11-deployment)
+3. [Conclusion](#conclusion)
 
 ### Introduction
 - This is project to demonstrate DCGAN architecture to generate Images trained on the dataset.
@@ -365,7 +384,24 @@ stabilize training.
 ![Image_generated_50_Epoch](output_images/Real_Fake_50_Epoch.png)
 - Images are now more clear and of more suitable output. Therefore, 50 Epochs might be a good to go value.
 
-### 11. Conclusion
+### 11. Deployment
+- The project was deployed using FastAPI, Docker, Azure and GitHub Actions for a CICD deployment.
+#### Steps:
+- **1.** Create a Dockerfile
+- **2.** Create a requirements.txt file
+- **3.** Create a app.py file using any farmework like Flask, Streamlit, FastAPI etc.(We used FastAPI)
+- **4.** Create a Docker Image
+- **5.** Create a Docker Container
+- **6.** Create a GitHub Repository
+- **8.** Create a Azure Container Registry
+- **9.** Create a Azure Web App
+- **7.** Create a GitHub Action
+- **8.** Deploy the Web App
+
+- Following these steps we deployed the project on Azure Web App.
+- More details are given in the deployment readme file.
+
+## Conclusion
 - We may conclude that the results get improving when we increase the epochs, and give better result at 50 epoch.
 - One thing to note is taht we may increase the highest number of output channel from 512 to even more greater values. This may give us better result. But, overall increses the computational cost. As the Dataset is very large it will take a lot of time and computational cost. As this model took about 3 hrs for the 50 epochs (one may understand the time complexity and computational cost). 
 - Therefore, we stop at 50 epochs and the channel size to 512 only.
