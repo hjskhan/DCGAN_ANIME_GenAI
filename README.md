@@ -129,7 +129,7 @@ channels to 512 channels to take in account for the computational costs.
 
 ----------------------------------------------------------------
         Layer (type)               Output Shape         Param #
-================================================================
+----------------------------------------------------------------
    ConvTranspose2d-1            [-1, 512, 4, 4]         819,200
    ConvTranspose2d-2            [-1, 512, 4, 4]         819,200
        BatchNorm2d-3            [-1, 512, 4, 4]           1,024
@@ -160,10 +160,6 @@ channels to 512 channels to take in account for the computational costs.
         Generator-28            [-1, 3, 64, 64]               0
              Tanh-29            [-1, 3, 64, 64]               0
         Generator-30            [-1, 3, 64, 64]               0
-================================================================
-Total params: 7,153,408
-Trainable params: 7,153,408
-Non-trainable params: 0
 ----------------------------------------------------------------
 
 - We use TransposeConv2d for upsampling the input.
