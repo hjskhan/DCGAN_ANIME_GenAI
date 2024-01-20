@@ -196,3 +196,5 @@ Check the GitHub Actions workflow in the "Actions" tab of your repository on Git
 Once the workflow is successful, access your deployed FastAPI app by visiting the Azure Web App URL.
 ![image](/output_images/Azure/azure-10.png)
 ![image](/output_images/Azure/azure-11.png)
+
+> Note: Same steps can be followed to deploy the model on AWS, Google Cloud, or any other cloud platform.
