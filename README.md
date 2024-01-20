@@ -179,6 +179,7 @@ channels to 512 channels to take in account for the computational costs.
         Generator-28            [-1, 3, 64, 64]               0
              Tanh-29            [-1, 3, 64, 64]               0
         Generator-30            [-1, 3, 64, 64]               0
+        
 ----------------------------------------------------------------
 
 - We use TransposeConv2d for upsampling the input.
